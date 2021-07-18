@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-vote',
@@ -6,6 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vote.component.css']
 })
 export class VoteComponent implements OnInit {
+
+  @Input() quote;
+  @Output() thisEvent = new EventEmitter<string>();
+
+  upvote(){
+    this.quote.upvote += 1;
+    this.thisEvent.emit("upvote");
+  }
+  downvote(){
+    this.quote.downvote -= 1;
+    this.thisEvent.emit("downvote");
+  }
 
   constructor() { }
 
