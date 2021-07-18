@@ -2,7 +2,7 @@
 
 SemaKitu is simple, interactive web application designed to collect, rank and archive quotes that have been provided by the general public.
 
-App is still in its initial test phase. Any feedback or insight would be greatly appreciated.
+The app is still in its initial test phase. Any feedback or insight would be greatly appreciated.
 
 License MIT Copyright(c) 2021
 
