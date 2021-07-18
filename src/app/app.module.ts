@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadingComponent } from './heading/heading.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadingComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,
