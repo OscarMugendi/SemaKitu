@@ -1,14 +1,27 @@
 # SemaKitu
 
+SemaKitu is simple, interactive web application designed to collect, rank and archive quotes that have been provided by the general public.
+
+App is still in the test phase. Any feedback or insight would be greatly appreciated.
+
+License MIT Copyright(c) 2021
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+
+## Technologies Used
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript/TypeScript</li>
+    <li>Bootstrap</li>
+    <li>JQuery</li>
+    <li>Angular</li>
+</ul>
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
