@@ -1,1 +1,37 @@
-<p>quote works!</p>
+<app-header></app-header>
+
+<div class="container" style="margin-top: 130px">
+
+    <div class="row">
+
+        <div class="col-md-7 pr-4">
+
+            <div *ngFor="let quote of quotes; let i = index">
+
+                <div class="quote-div" [quote]="quote" (click)="findHighestUpvote(quotes)" appHighestVote>
+
+                    <div class="quote">{{ quote.quote }}</div>
+                    <br />
+
+                    <app-quote-details [quote]="quote"></app-quote-details>
+                    <app-vote [quote]="quote"></app-vote>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-5">
+
+            <div id="quote-form" class="position-fixed">
+
+                <app-quote-form (addNewQuote)="newQuote($event)"> </app-quote-form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
