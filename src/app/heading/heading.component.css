@@ -1,0 +1,19 @@
+#heading {
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 3em;
+    color: black;
+    background: silver;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    padding-left: 5%;
+}
+
+#heading span {
+    font-weight: 500;
+}
