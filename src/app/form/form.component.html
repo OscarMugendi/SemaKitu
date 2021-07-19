@@ -4,23 +4,23 @@
         <hr>
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.author" name="name" #name='ngModel' placeholder="Full names">
+            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.author" name="name" #name='ngModel' placeholder="Name">
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                <p>Required</p>
+                <p>Required!</p>
             </div>
         </div>
         <div class="form-group">
             <label for="description">Quote</label>
-            <textarea class="form-control" id="description" id="name" [(ngModel)]="newQuote.words" name="words" #words='ngModel' rows="4" required placeholder="Write here"></textarea>
+            <textarea class="form-control" id="description" id="name" [(ngModel)]="newQuote.words" name="words" #words='ngModel' rows="4" required placeholder="Say something..."></textarea>
             <div [hidden]="words.valid || words.pristine" class="alert alert-danger">
-                <p>Required</p>
+                <p>Required!</p>
             </div>
         </div>
         <div class="form-group">
             <label for="name">Author</label>
-            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.publisher" name="publisher" #publisher='ngModel' placeholder="Authors full names">
+            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.publisher" name="publisher" #publisher='ngModel' placeholder="Author">
             <div [hidden]="publisher.valid || publisher.pristine" class="alert alert-danger">
-                <p>Required</p>
+                <p>Required!</p>
             </div>
         </div> <br>
         <button type="submit" class="btn btn-success">Submit</button>
