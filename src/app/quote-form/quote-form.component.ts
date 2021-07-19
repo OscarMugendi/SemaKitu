@@ -11,7 +11,7 @@ export class QuoteFormComponent implements OnInit {
 
   public placeholder = "Name"
 
-  public newQuote = new Quote(0,"",0,0,"","", new Date());
+  public newQuote = new Quote(0,"","","");
   @Output() addNewQuote = new EventEmitter<Quote>();
 
   submitQuote(){
