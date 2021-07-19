@@ -8,23 +8,23 @@
     <div id="quotes">
         <div class="row">
             <div class="col-md-3" *ngFor='let quote of quotes; let i = index'>
-                <div class="card" appHighlight>
+                <div class="card">
                     <div class="card-header">
-                        <q>{{quote.words}}</q>
-                    </div> {{quote.completeDate| date}}
+                        <q>{{quote.quote}}</q>
+                    </div>
                     <button (click)='toggleDetails(i)' class="btn btn-outline-primary">Author</button>
                     <div *ngIf='quote.showName'>
-                        <app-quote-detail [name]='quote' (isComplete)='DeleteGoal($event,i)' (myLike)='addLike($event,i)' (yourLike)='addNotLike($event,i)'>
-                        </app-quote-detail>
+                        <app-details [name]='quote' (isComplete)='DeleteGoal($event,i)' (myLike)='addLike($event,i)' (yourLike)='addNotLike($event,i)'>
+                        </app-details>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <p *ngIf='quotes.length > 5'> There's room for more.</p>
+    <p *ngIf='quotes.length > 9'>Best of 9</p>
 
     <div class="forma">
-        <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+        <app-form (addQuote)='addNewQuote($event)'></app-form>
     </div>
 </div>
