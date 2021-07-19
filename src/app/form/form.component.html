@@ -23,13 +23,6 @@
                 <p>Required</p>
             </div>
         </div> <br>
-        <div class="form-group">
-            <label for="complete">Date</label>
-            <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
-            <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
-                <p>Required</p>
-            </div>
-        </div> <br>
-        <button type="submit" class="btn btn-success">Save</button>
+        <button type="submit" class="btn btn-success">Submit</button>
     </form>
 </div>

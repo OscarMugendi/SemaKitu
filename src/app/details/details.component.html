@@ -4,7 +4,6 @@
             <p>By~<strong><cite class="">{{name.publisher}}</cite></strong></p>
             <p>Submitted by~<strong><cite></cite>{{name.author}}</strong></p>
         </footer>
-        <p>Submitted {{name.completeDate| timeCount}} days ago.</p>
     </blockquote>
     <button (click)='upVote(true)' class="btn btn-outline-success">UpVotes {{name.likes}}</button>
     <button (click)='downVote(true)' class="btn btn-outline-info">DownVotes {{name.dislikes}}</button>
