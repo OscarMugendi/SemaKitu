@@ -17,7 +17,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     <li>TypeScript</li>
     <li>Bootstrap</li>
     <li>Angular</li>
-    <li>Git</li>
 </ul>
 
 ## Development server

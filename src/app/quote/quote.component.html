@@ -14,7 +14,7 @@
                     </div>
                     <button (click)='toggleDetails(i)' class="btn btn-outline-primary">Author</button>
                     <div *ngIf='quote.showName'>
-                        <app-details [name]='quote' (isComplete)='DeleteGoal($event,i)' (myLike)='addLike($event,i)' (yourLike)='addNotLike($event,i)'>
+                        <app-details [name]='quote' (isComplete)='DeleteGoal($event,i)'>
                         </app-details>
                     </div>
                 </div>

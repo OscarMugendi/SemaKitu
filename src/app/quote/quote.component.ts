@@ -9,15 +9,15 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1, 'I think therefore I am.','Rene Descartes',"Oscar"),
-    new Quote(2, 'What doesnt kill me makes me stronger.','Friedrich Nietzsche',"Oscar"),
-    new Quote(3, 'If God did not exist. It would be necessary to invent Him.','Voltaire',"Oscar"),
-    new Quote(4, 'Science is what is known. Philosophy is what is unknown.','Bertrand Russell',"Oscar"),
-    new Quote(5, 'The only thing we have to fear is fear itself.','Franklin D. Roosevelt',"Oscar"),
-    new Quote(6, 'Where there is love, there is life.','Mahatma Gandhi',"Oscar"),
-    new Quote(7, 'Fortune favors the brave.','Virgil',"Oscar"),
-    new Quote(8, 'Less is more.','Ludwig Mies van der Rohe',"Oscar"),
-    new Quote(9, 'Covfefe.','Donald Trump',"Oscar"),
+    new Quote(1, 'I think therefore I am.','Oscar',"Rene Descartes"),
+    new Quote(2, 'What doesnt kill me makes me stronger.','Oscar',"Friedrich Nietzsche"),
+    new Quote(3, 'If God did not exist. It would be necessary to invent Him.','Oscar',"Voltaire"),
+    new Quote(4, 'Science is what is known. Philosophy is what is unknown.','Oscar',"Bertrand Russell"),
+    new Quote(5, 'The only thing we have to fear is fear itself.','Oscar',"Franklin D. Roosevelt"),
+    new Quote(6, 'Where there is love, there is life.','Oscar',"Mahatma Gandhi"),
+    new Quote(7, 'Fortune favors the brave.','Oscar',"Virgil"),
+    new Quote(8, 'Less is more.','Oscar',"Ludwig Mies van der Rohe"),
+    new Quote(9, 'Covfefe.','Oscar',"Donald Trump"),
   ];
 
   toggleDetails(index: number){
@@ -34,30 +34,14 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-   addLike(myLike:boolean,index:number){
-     if(myLike){
-     this.quotes[index].likes++;
-     }
-   }
-
-   addNotLike(yourLike:boolean,index:number){
-     if(yourLike)
-     this.quotes[index].dislikes++;
-   }
-
    newScript!:string;
    newAuthor!:string;
-   newLikes!:number;
-   newDislikes!:number;
    
    addNewQuote(quote:any){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
     this.newScript = quote.words;
     this.newAuthor = quote.author;
-    this.newLikes = 0;
-    this.newDislikes = 0;
-    quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
   constructor() { }
